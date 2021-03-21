@@ -13,7 +13,7 @@ Finally, I managed to implement the Tonelli-Shanks-Algorithm (https://en.wikiped
 
 Using this knowledge, I decided to use `gmp::mpz::Mpz` for doing arithmetics with big integers. However, here is my solution:
 
-{% highlight rust %}
+```ruby
 // Legendre symbol, returns 1, 0, or -1 mod p
 fn ls(a: &Mpz, p: &Mpz) -> Mpz {
     let exp = (p-Mpz::one()) / Mpz::from(2 as u32);
@@ -82,4 +82,4 @@ impl SquareRoot for Zr {
         }
     }
 }
-{% endhighlight %}
+```
