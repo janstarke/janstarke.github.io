@@ -1,4 +1,9 @@
 - title: Blog
   url: /
+- title: Forensics
+  url: /forensics/
+  subnav: 
+   - title: Forensic triage
+   - url: forensics_pages/forensic_triage/
 - title: about
   url: /about/
