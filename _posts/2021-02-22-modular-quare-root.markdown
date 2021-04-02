@@ -3,12 +3,13 @@ layout: post
 title:  "Modular square root"
 date:   2021-02-22
 categories: rust crypto
+author: jasa
 ---
 
-Finally, I managed to implement the Tonelli-Shanks-Algorithm (https://en.wikipedia.org/wiki/Tonelli%E2%80%93Shanks_algorithm) in Rust, and I learned a lot by doing it:
+Finally, I managed to implement the Tonelli-Shanks-Algorithm[^1] in Rust, and I learned a lot by doing it:
 
 * Rusts BigInt does not provide methods for doing fundamental modular arithmetics, such as power or gcd
-* There is a fork of `BigInt`, which is named `num-bigint-dig` (https://crates.io/crates/num-bigint-dig), which provides at least `modpow`
+* There is a fork of `BigInt`, which is named `num-bigint-dig`[^2], which provides at least `modpow`
 * There is no simple way to generate random BigInt values in Rust
 
 Using this knowledge, I decided to use `gmp::mpz::Mpz` for doing arithmetics with big integers. However, here is my solution:
@@ -83,3 +84,6 @@ impl SquareRoot for Zr {
     }
 }
 ```
+
+[^1]: [https://en.wikipedia.org/wiki/Tonelli%E2%80%93Shanks_algorithm](https://en.wikipedia.org/wiki/Tonelli%E2%80%93Shanks_algorithm)
+[^2]: [https://crates.io/crates/num-bigint-dig](https://crates.io/crates/num-bigint-dig)
