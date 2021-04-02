@@ -1,9 +1,8 @@
 - title: Blog
   url: /
-- title: Forensics
-  url: /forensics/
-  subnav: 
-   - title: Forensic triage
-   - url: forensics_pages/forensic_triage/
+- title: Cool Tools
+  url: /tools/
+- title: Triage
+  url: /triage/
 - title: about
   url: /about/
