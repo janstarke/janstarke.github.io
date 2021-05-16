@@ -6,7 +6,7 @@ categories: rust forensics
 author: jasa
 ---
 
-After some days of work, I finalized version *0.3.0* of `mft2bodyfile` ([https://github.com/janstarke/mft2bodyfile]), which is aimed to be a replacement for `analyze_mft.py`, which is abandoned.
+After some days of work, I finalized version *0.3.0* of `mft2bodyfile` ([https://github.com/janstarke/mft2bodyfile](https://github.com/janstarke/mft2bodyfile)), which is aimed to be a replacement for `analyze_mft.py`, which is abandoned.
 
 # Why did i start this project?
 
