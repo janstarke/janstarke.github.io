@@ -1,7 +1,0 @@
-jasa:
-  name: Jan Starke
-  picture: /images/me_small.jpg
-  links:
-    - title: GitHub
-      url: https://github.com/janstarke
-      icon: fab fa-github-square

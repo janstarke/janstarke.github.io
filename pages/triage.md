@@ -26,7 +26,7 @@ If you have vmdk files, you first need to turn them to raw images (which is vver
 sudo affuse -o ro,allow_other /cases/sample/myserver.vmdk /mnt/aff/myserver/
 ```
 
-| Option | Meaning | 
+| Option | Meaning |
 |--------|---------|
 | `-o ro` | read-only|
 | `-o allow_other`| allow access to other users |
@@ -69,6 +69,7 @@ To create a filesystem timeline, you need to know the following information:
 ```shell
 fls -r -m "C:/" -z CET /dev/loop2p1 >myserver_c.bodyfile
 ```
+
 | Option | Meaning | 
 |--------|---------|
 |`-r`| Recurse on directory entries |
