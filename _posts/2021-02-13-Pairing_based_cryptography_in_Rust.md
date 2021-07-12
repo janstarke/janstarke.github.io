@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Pairing based cryptography in Rust"
-date:   2021-02-22
+date:   2021-02-13
 categories: rust crypto
 author: jasa
 ---
