@@ -33,11 +33,14 @@ And, more important, our attack did work now :-)
 
 After the test, I sent an email to the author of macof and dsniff, including a patch of what we've done, but until today I received no answer. So, I'll publsh our patch here, and you are free to use it:
 
-```diff
+```shell
  diff -rupN dsniff-2.4_beta1-r6/macof.c dsniff-2.4_beta1-r6_FIX/macof.c
+````
+
+```diff
 --- dsniff-2.4_beta1-r6/macof.c	2015-01-20 08:50:53.980054279 +0100
 +++ dsniff-2.4_beta1-r6_FIX/macof.c	2015-01-20 08:51:24.220054894 +0100
-@@ -134,7 +134,7 @@ main(int argc, char \*argv\[\])
+@@ -134,7 +134,7 @@ main(int argc, char *argv[])
  		libnet_build_tcp(sport, dport, seq, 0, TH_SYN, 512,
  				 0, 0, LIBNET_TCP_H, NULL, 0, l, 0);
  		
