@@ -12,3 +12,4 @@ title: Cool tools
 |procbins|Compresses all process binaries into a zip file|[https://github.com/janstarke/procbins](https://github.com/teeshop/procbins)|
 |regview|Offline-Viewer for Windows Registry Files|[https://github.com/janstarke/regview](https://github.com/teeshop/regview)|
 |rexgen|A tool to create words based on regular expressions|[https://github.com/janstarke/rexgen](https://github.com/teeshop/rexgen)|
+|evtx2bodyfile|parses evtx files into a bodyfile | https://github.com/janstarke/evtx2bodyfile |
