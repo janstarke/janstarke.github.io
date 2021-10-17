@@ -11,5 +11,5 @@ title: Cool tools
 |mft2bodyfile|parses an `$MFT` file to bodyfile | https://github.com/janstarke/mft2bodyfile |[![Crate](https://img.shields.io/crates/v/mft2bodyfile.svg)](https://crates.io/crates/mft2bodyfile)![Crates.io](https://img.shields.io/crates/d/mft2bodyfile)|
 |procbins|Compresses all process binaries into a zip file|[https://github.com/janstarke/procbins](https://github.com/teeshop/procbins)|[![Crates.io](https://img.shields.io/crates/v/procbins)](https://img.shields.io/crates/v/procbins)![Crates.io](https://img.shields.io/crates/d/procbins)|
 |regview|Offline-Viewer for Windows Registry Files|[https://github.com/janstarke/regview](https://github.com/teeshop/regview)| |
-|rexgen|A tool to create words based on regular expressions|[https://github.com/janstarke/rexgen](https://github.com/teeshop/rexgen)| |
+|rexgen|A tool to create words based on regular expressions|[https://github.com/janstarke/rexgen](https://github.com/teeshop/rexgen)|![GitHub issues](https://img.shields.io/github/issues/janstarke/rexgen)|
 |evtx2bodyfile|parses evtx files into a bodyfile | https://github.com/janstarke/evtx2bodyfile | Waiting for [https://github.com/omerbenamram/evtx/pull/195](https://github.com/omerbenamram/evtx/pull/195) |
