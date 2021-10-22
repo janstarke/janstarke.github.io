@@ -9,6 +9,8 @@
 
 - title: "Tools"
   url: "pages/tools"
+- title: "PBC4Rust"
+  url: "pages/pbc4rust"
 
 - default: menu_about
   url:   "about"
