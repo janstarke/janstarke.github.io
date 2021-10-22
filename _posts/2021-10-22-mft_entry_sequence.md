@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Forensic analysis of deleted ´$MFT´ entries"
+title:  "Forensic analysis of deleted `$MFT` entries"
 date:   2021-10-22
 categories: forensics
 author: jasa
