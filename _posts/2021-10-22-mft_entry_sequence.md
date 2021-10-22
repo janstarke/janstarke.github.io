@@ -54,4 +54,4 @@ After deletion, I found the following MFT references
 |`mixed delete/sample1.rtf`| `45-1` | `42-1` |
 |`mixed delete/sample2.rtf`| `46-1` | `42-1` |
 
-Obviously, our test shows that sequence numbers are incremented right after deletion, but *not* nessecarily at reallocation. The Microsofzt documentation is right. 
+Obviously, our test shows that sequence numbers are incremented right after deletion, but *not* nessecarily at reallocation. The Microsoft documentation is right. 
