@@ -30,3 +30,5 @@ You might think that "non-base MFT entries do not have the `$FILE_NAME` and `$ST
 Consider the following situation: You have a file, which has a lot of attributes. The list of attributes is so long, that it cannot be stored in an `$MFT` entry. So, the `$ATTRIBUTE_LIST` attribute is stored as a nonresident attribute, outside the `$MFT`. At the moment, `mft2bodyfile` is not able to find the corresponding `$MFT` entries, and will generate a filename.
 
 Can we fix this? Yes, we can. If we detect such a situation, we can search the `$MFT` entries which refer to our base entry, and use those to find a `$FILE_NAME` attribute. 
+
+## Update: fixed in *0.5.0*
