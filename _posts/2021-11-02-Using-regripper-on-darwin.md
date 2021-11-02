@@ -22,8 +22,8 @@ mv *.pm Parse/Win32Registry/WinNT/
 
 # Usage example
 
-```fish
-PERL5LIB=(pwd) perl rip.pl -r Amcache.hve -p amcache_tln >amcache.tln
+```shell
+PERL5LIB=$(pwd) perl rip.pl -r Amcache.hve -p amcache_tln >amcache.tln
 ```
 
 # Convert `TLN` format to `bodyfile` format
