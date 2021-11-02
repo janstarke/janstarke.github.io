@@ -15,7 +15,7 @@ cpan install Parse::Win32Registry
 
 # find out where Parse::Win32Registry was installed
 
-/usr/local/Cellar/perl/5.34.0/lib/perl5/site_perl/5.34.0/Parse .
+cp -r /usr/local/Cellar/perl/5.34.0/lib/perl5/site_perl/5.34.0/Parse .
 
 mv *.pm Parse/Win32Registry/WinNT/
 ```
