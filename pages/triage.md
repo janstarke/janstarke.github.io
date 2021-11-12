@@ -20,6 +20,8 @@ In this page I'm summarizing a lot of stuff which is related to collection triag
 
 ## Mounting stuff
 
+### in Linux
+
 If you have vmdk files, you first need to turn them to raw images (which is vvery slow) or you need to create a raw view onto them:
 
 ```shell
@@ -56,7 +58,19 @@ Now, we could mount a partition. Keep in mind that you never, ever, omit the `ro
 | `-o ro`| read-only |
 | `-o show_sys_files`|Show the metafiles in directory listings|
 | `-o streams_interface=windows`| enable access to streams using the Windows syntax (e.g. `cat file:stream`) |
+### in MacOS
 
+Currently, I do not know any option to mount `VMDK` files in MacOS. However, one can convert images using qemu-img:
+
+```shell
+qemu-img convert -f vmdk -O raw myserver.vmdk myserver.vmdk.raw
+```
+
+Now, you can attach that raw image as a loop device:
+
+```shell
+sudo hdiutil attach -imagekey diskimage-class=CRawDiskImage -nomount -readonly myserver.vmdk.raw
+```
 ## Timeline
 
 ### Filesystem timeline
