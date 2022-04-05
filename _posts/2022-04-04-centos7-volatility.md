@@ -84,7 +84,8 @@ Now, we have all we need. Let's go
 ```shell
 dwarf2json/dwarf2json linux \
         --elf tmp_kernel/usr/lib/debug/lib/modules/3.10.0-862.3.2.el7.x86_64/vmlinux \
-        --system-map tmp_system_map/boot/System.map-3.10.0-862.3.2.el7.x86_64 >centos7-3.10.0-862.3.2.el7.x86_64.json
+        --system-map tmp_system_map/boot/System.map-3.10.0-862.3.2.el7.x86_64 \
+        >centos7-3.10.0-862.3.2.el7.x86_64.json
 
 # cleaning up
 rm -rf tmp_*
