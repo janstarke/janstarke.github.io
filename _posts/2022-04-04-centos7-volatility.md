@@ -1,14 +1,14 @@
 ---
 layout: post
-title:  "Analyzing Linux memory images with vulnerability"
+title:  "Analyzing Linux memory images with volatility"
 date:   2022-04-04
 categories: forensics tools
 author: jasa
 ---
 
-# Installation of vulnerability3
+# Installation of volatility3
 
-Why vulnerability3? Because version 2 is deprecated.
+Why volatility3? Because version 2 is deprecated.
 
 ```shell
 
@@ -20,18 +20,18 @@ python3 -m venv venv
 source venv/bin/activate
 
 # install volatility
-pushd vulnerability3
+pushd volatility3
 pip3 install -r requirements.txt
 python3 setup.py build
 python3 setup.py install
 popd
 ```
 
-At this point in history, you have vulnerability3 installed in `venv`.
+At this point in history, you have volatility3 installed in `venv`.
 
 # Obtaining a matching profile
 
-Volatility needs to know a lot about the memory layout you're going to work with. Because every linux kernel can have a different layout, you need to get the special layout for your kernel. Vulnerability calls this the *profile*.
+Volatility needs to know a lot about the memory layout you're going to work with. Because every linux kernel can have a different layout, you need to get the special layout for your kernel. volatility calls this the *profile*.
 
 To generate the profile, you need the following:
  - the tool `dwarf2json`, which is a separate github project
@@ -92,7 +92,7 @@ rm -rf tmp_*
 
 # Installing the profile
 
-Vulnerability expects the profile as *xz* file, so let's compress it:
+volatility expects the profile as *xz* file, so let's compress it:
 
 ```shell
 xz centos7-3.10.0-862.3.2.el7.x86_64.json
