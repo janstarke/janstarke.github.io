@@ -49,6 +49,7 @@ this generates `/dev/loop2p1` for partition 1, and so on. To see which partition
 | `-P \| --partscan` | create a partitioned loop device |
 
 Now, we could mount a partition. Keep in mind that you never, ever, omit the `ro` option!
+
  ```shell
  $ sudo mount -o ro,show_sys_files,streams_interface=windows /dev/loop2p1 /mnt/myserver/C
  ```
