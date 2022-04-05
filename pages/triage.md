@@ -1,16 +1,16 @@
 ---
 layout: page
-title: Forensic triage
+title: Forensic triage and data gathering
 ---
 
 In this page I'm summarizing a lot of stuff which is related to collection triage data.
 
-## Required tools
+# Required tools
 
  - sleuthkit [https://www.sleuthkit.org/](https://www.sleuthkit.org/)
  - afflib-tools [https://github.com/simsong/AFFLIBv3](https://github.com/simsong/AFFLIBv3)
 
-## Expected Result (sorted by priority)
+# Expected Result (sorted by priority)
 
 1. Bodyfile for all partitions
 1. Windows event logs
@@ -18,9 +18,9 @@ In this page I'm summarizing a lot of stuff which is related to collection triag
 1. User hives
 1. User profiles
 
-## Mounting stuff
+# Mounting stuff
 
-### in Linux
+## in Linux
 
 If you have vmdk files, you first need to turn them to raw images (which is vvery slow) or you need to create a raw view onto them:
 
@@ -46,7 +46,7 @@ this generates `/dev/loop2p1` for partition 1, and so on. To see which partition
 |--------|---------|
 | `--show` | print device name after setup  (with `-f`) |
 | `-f \| --find` | find first unused device |
-| ` -P \| --partscan ` | create a partitioned loop device |
+| `-P \| --partscan` | create a partitioned loop device |
 
 Now, we could mount a partition. Keep in mind that you never, ever, omit the `ro` option!
  ```shell
@@ -58,7 +58,8 @@ Now, we could mount a partition. Keep in mind that you never, ever, omit the `ro
 | `-o ro`| read-only |
 | `-o show_sys_files`|Show the metafiles in directory listings|
 | `-o streams_interface=windows`| enable access to streams using the Windows syntax (e.g. `cat file:stream`) |
-### in MacOS
+
+## in MacOS
 
 Currently, I do not know any option to mount `VMDK` files in MacOS. However, one can convert images using qemu-img:
 
@@ -71,9 +72,34 @@ Now, you can attach that raw image as a loop device:
 ```shell
 sudo hdiutil attach -imagekey diskimage-class=CRawDiskImage -nomount -readonly myserver.vmdk.raw
 ```
-## Timeline
 
-### Filesystem timeline
+# Handling LVM partitions
+
+Assume you now have a partition `/dev/loop20p1` which contains a physical volume (pv). You can use kpartx to read the volume information and create the relevant device nodes:
+
+```bash
+sudo kpartx -r -a -v /dev/loop20p1
+```
+
+| Option | Meaning | 
+|--------|---------|
+|`-r` | read-only partition mappings |
+|`-a` | add partition mappings |
+|`-v` | operate verbosely |
+
+Now, you can use `pvs` to display information about physical volumes. In my case, I had a physical volume named `data_pv`. Next, you need to activate the volumes you're going to work with:
+
+```bash
+sudo vgchange --activate y data_pv
+```
+
+This will create a lot of device nodes beneath `/dev/data_pv`, one for every logical volume in `data_pv`. You can now work with them.
+
+I took a lot of information from <https://countuponsecurity.com/tag/linux-lvm-forensics/>
+
+# Timeline
+
+## Filesystem timeline
 
 To create a filesystem timeline, you need to know the following information:
 
@@ -91,7 +117,7 @@ fls -r -m "C:/" -z CET /dev/loop2p1 >myserver_c.bodyfile
 | `-z CET`| Time zone of original machine (`CET`) (only useful with -l)|
 
 
-## Important Windows triage artifacts
+# Important Windows triage artifacts
 
 | Artifact | Location | 
 |-|-|
