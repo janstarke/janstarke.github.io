@@ -11,6 +11,8 @@
   url: "pages/tools"
 - title: "PBC4Rust"
   url: "pages/pbc4rust"
+- title: "Forensics Snippets"
+  url: "pages/forensics"
 
 - default: menu_about
   url:   "about"
