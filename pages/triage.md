@@ -45,8 +45,8 @@ this generates `/dev/loop2p1` for partition 1, and so on. To see which partition
 | Option | Meaning | 
 |--------|---------|
 | `--show` | print device name after setup  (with `-f`) |
-| `-f \| --find` | find first unused device |
-| `-P \| --partscan` | create a partitioned loop device |
+| <code>-f &#124; --find</code> | find first unused device |
+| <code>-P &#124; --partscan</code> | create a partitioned loop device |
 
 Now, we could mount a partition. Keep in mind that you never, ever, omit the `ro` option!
 
