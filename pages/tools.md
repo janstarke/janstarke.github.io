@@ -7,6 +7,7 @@ title: Cool tools
 
 | Name | What is this tool used for? | URL | Status |
 |-|-|-|-| 
+|dionysos |Scanner for various IoCs | https://github.com/janstarke/dionysos | [![Crates.io](https://img.shields.io/crates/v/dionysos)](https://crates.io/crates/dionysos) ![Crates.io (latest)](https://img.shields.io/crates/dv/dionysos)|
 |evtx2bodyfile|parses evtx files into a bodyfile | https://github.com/janstarke/evtx2bodyfile | ![Crates.io](https://img.shields.io/crates/v/evtx2bodyfile) ![Crates.io (latest)](https://img.shields.io/crates/dv/evtx2bodyfile) |
 |evtxtools | Collection of command line tools to correlate windows event logs. This set of tools is aimed to be used at forensic investigations. | [https://github.com/janstarke/evtxtools](https://github.com/teeshop/evtxtools)|  ![Crates.io](https://img.shields.io/crates/v/evtxtools) ![Crates.io (latest)](https://img.shields.io/crates/dv/evtxtools) |
 |mactime2| Replacement for `mactime` which fixes some of its shortcomings | <https://github.com/janstarke/mactime2> | ![Crates.io](https://img.shields.io/crates/v/mactime2) ![Crates.io (latest)](https://img.shields.io/crates/dv/mactime2) ![Codecov](https://img.shields.io/codecov/c/github/janstarke/mactime2) |
