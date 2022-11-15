@@ -3,6 +3,8 @@ layout: page
 title: Cool tools
 ---
 
+[![](/images/tools.png)](/images/tools.png)
+
 | Name | What is this tool used for? | URL | Status |
 |-|-|-|-| 
 |evtx2bodyfile|parses evtx files into a bodyfile | https://github.com/janstarke/evtx2bodyfile | ![Crates.io](https://img.shields.io/crates/v/evtx2bodyfile) ![Crates.io (latest)](https://img.shields.io/crates/dv/evtx2bodyfile) |
