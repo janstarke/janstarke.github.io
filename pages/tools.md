@@ -3,7 +3,7 @@ layout: page
 title: Cool tools
 ---
 
-[![](/images/tools.png)](/images/tools.png)
+![Relation of tools to one another](/images/tools.svg)
 
 | Name | What is this tool used for? | URL | Status |
 |-|-|-|-| 
