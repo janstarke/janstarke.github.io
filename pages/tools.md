@@ -3,7 +3,7 @@ layout: page
 title: Cool tools
 ---
 
-![Relation of tools to one another](/images/tools.svg)
+<object type="image/svg+xml" data="/images/tools.svg" style="width:100%"></object>
 
 | Name | What is this tool used for? | Status |
 |-|-|-| 
