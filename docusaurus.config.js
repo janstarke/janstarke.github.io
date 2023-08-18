@@ -37,19 +37,20 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
+				
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          //editUrl:
+          //  'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          //editUrl:
+          //  'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -62,23 +63,41 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+			image: 'img/fox/fuchs_blau_32.png',
       navbar: {
-        title: 'My Site',
+        title: 'JASAs blog',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'img/fox/fuchs_blau_32.png',
         },
         items: [
+				/*
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: 'Tutorial',
           },
+					*/
+              {
+                label: 'Tools',
+                to: 'tools',
+              },
+              {
+                label: 'Forensics',
+                to: 'forensics',
+              },
+              {
+                label: 'PBC4Rust',
+                to: 'pbc4rust',
+              },
+              {
+                label: 'Data Acquisition',
+                to: 'triage',
+              },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/janstarke',
             label: 'GitHub',
             position: 'right',
           },
@@ -91,11 +110,30 @@ const config = {
             title: 'Docs',
             items: [
               {
+                label: 'Tools',
+                to: 'tools',
+              },
+              {
+                label: 'Forensics',
+                to: 'forensics',
+              },
+              {
+                label: 'PBC4Rust',
+                to: 'pbc4rust',
+              },
+              {
+                label: 'Data Acquisition',
+                to: 'triage',
+              },
+							/*
+              {
                 label: 'Tutorial',
                 to: '/docs/intro',
               },
+							*/
             ],
           },
+					/*
           {
             title: 'Community',
             items: [
@@ -112,7 +150,7 @@ const config = {
                 href: 'https://twitter.com/docusaurus',
               },
             ],
-          },
+          },*/
           {
             title: 'More',
             items: [
@@ -121,13 +159,17 @@ const config = {
                 to: '/blog',
               },
               {
+                label: 'About',
+                to: 'about',
+              },
+              {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/janstarke',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Jan Starke. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
