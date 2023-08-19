@@ -1,9 +1,10 @@
 ---
 layout: page
 title: Cool tools
+slug: /
 ---
 
-<object type="image/svg+xml" data="/images/tools.svg" style="width:100%"></object>
+<object type="image/svg+xml" data="/img/tools.svg" width="100%"></object>
 
 | Name | What is this tool used for? | Status |
 |-|-|-| 
@@ -17,6 +18,6 @@ title: Cool tools
 |[procbins](https://github.com/janstarke/procbins)|Compresses all process binaries into a zip file|[![Crates.io](https://img.shields.io/crates/v/procbins)](https://img.shields.io/crates/v/procbins) ![Crates.io](https://img.shields.io/crates/d/procbins)|
 |[regview](https://github.com/janstarke/regview)|Offline-Viewer for Windows Registry Files| ![Crates.io](https://img.shields.io/crates/v/regview) ![Crates.io (latest)](https://img.shields.io/crates/dv/regview) |
 |[rexgen](https://github.com/janstarke/rexgen)|A tool to create words based on regular expressions|![GitHub issues](https://img.shields.io/github/issues/janstarke/rexgen)|
-|
+|||
 |[evtxview](https://github.com/janstarke/evtxview) | `evtxview` is a GUI viewer for Microsoft Windows evtx files (Windows event logs). I'm hacking this tiny tool because I need such a tool in most forensic investigations. | final, but boring |
 |libe2ee|C++-based library that implements Proxy-ReEncryption (AFGH-Scheme) and provides exporting and importing of JSON datastructure| PoC, abondened|

@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'JASAs blog',
+  title: 'Jan Starke',
   tagline: 'This is a page about technological topics',
   favicon: 'img/favicon.ico',
 
@@ -66,18 +66,20 @@ const config = {
       // Replace with your project's social card
 			image: 'img/fox/fuchs_blau_32.png',
       navbar: {
-        title: 'JASAs blog',
+        title: 'Jan Starke',
         logo: {
           alt: 'My Site Logo',
           src: 'img/fox/fuchs_blau_32.png',
         },
         items: [
+				/*
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: 'Tutorial',
           },
+					*/
           {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/janstarke',
