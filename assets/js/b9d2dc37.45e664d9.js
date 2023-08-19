@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkjanstarke_blog=self.webpackChunkjanstarke_blog||[]).push([[9956],{8298:s=>{s.exports=JSON.parse('{"label":"forensics","permalink":"/blog/tags/forensics","allTagsPath":"/blog/tags","count":1}')}}]);
