@@ -40,6 +40,7 @@ const config = {
 				
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
+					routeBasePath: '/',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           //editUrl:
@@ -71,30 +72,12 @@ const config = {
           src: 'img/fox/fuchs_blau_32.png',
         },
         items: [
-				/*
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: 'Tutorial',
           },
-					*/
-              {
-                label: 'Tools',
-                to: 'tools',
-              },
-              {
-                label: 'Forensics',
-                to: 'forensics',
-              },
-              {
-                label: 'PBC4Rust',
-                to: 'pbc4rust',
-              },
-              {
-                label: 'Data Acquisition',
-                to: 'triage',
-              },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/janstarke',
@@ -106,6 +89,7 @@ const config = {
       footer: {
         style: 'dark',
         links: [
+					/*
           {
             title: 'Docs',
             items: [
@@ -125,15 +109,12 @@ const config = {
                 label: 'Data Acquisition',
                 to: 'triage',
               },
-							/*
               {
                 label: 'Tutorial',
                 to: '/docs/intro',
               },
-							*/
             ],
           },
-					/*
           {
             title: 'Community',
             items: [
