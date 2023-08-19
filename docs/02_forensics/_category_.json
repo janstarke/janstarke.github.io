@@ -1,0 +1,14 @@
+{
+  "position": 2.5,
+  "label": "Forensics",
+  "collapsible": true,
+  "collapsed": false,
+  "className": "red",
+  "link": {
+    "type": "generated-index",
+    "title": "Forensic stuff"
+  },
+  "customProps": {
+    "description": "Forensics"
+  }
+}
