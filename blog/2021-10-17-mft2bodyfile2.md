@@ -3,7 +3,7 @@ layout: post
 title:  "$MFT file parser improved"
 date:   2021-10-17
 categories: rust forensics
-author: jasa
+authors: [jasa]
 ---
 
 I added some improvements to `mft2bodyfile` ([https://github.com/janstarke/mft2bodyfile](https://github.com/janstarke/mft2bodyfile)) and released version *0.5.0*. Mainly, the following things have changed:

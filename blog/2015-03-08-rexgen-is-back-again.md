@@ -4,6 +4,7 @@ date: "2015-03-08"
 categories: 
   - "allgemein"
 layout: post
+authors: [jasa]
 ---
 
 ... with a new version 1.2.3 and a new repository location: [https://github.com/janstarke/rexgen](https://github.com/janstarke/rexgen)

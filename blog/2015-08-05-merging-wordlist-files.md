@@ -2,6 +2,7 @@
 title: "Merging wordlist files"
 date: "2015-08-05"
 layout: post
+authors: [jasa]
 ---
 
 Sometimes when cracking password, one has to create password candidates which are combinations of words from a wordlist. Unfortunately, common password cracking tools do not support this feature. This makes perfectly sense, because the task of a password cracking tool is cracking passwords. We need a tool which creates line wise cross combinations of text files.

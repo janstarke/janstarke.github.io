@@ -6,6 +6,7 @@ categories:
 tags: 
   - "forensics"
 layout: post
+authors: [jasa]
 ---
 
 What can I say? I recently analyzed an emotet variant which I found in a customer network. Eventually, I found that a new PE binary was being encrypted and loaded into memory. As encryption, simple RC4 was being used, with a static key `@nw<jss6fG3Na4jvh^c&4Cgp$*rZ<g?TD@%FgTnwg3`, hashed with MD5, which results in `21755ce816bd55c92f57eb4fd2060197` as RC4 key.

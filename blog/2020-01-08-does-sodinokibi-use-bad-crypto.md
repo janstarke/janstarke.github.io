@@ -5,6 +5,7 @@ categories:
   - "forensics"
   - "malware"
 layout: post
+authors: [jasa]
 ---
 
 # Crypto Stuff

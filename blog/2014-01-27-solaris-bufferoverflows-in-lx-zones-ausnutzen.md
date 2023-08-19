@@ -5,6 +5,7 @@ categories:
   - "exploits"
   - "pentest"
 layout: post
+authors: [jasa]
 ---
 
 In diesem Artikel wird gezeigt, dass es möglich ist, in einer Linux-Zone unter Solaris einen Shellcode auszuführen, wenn dieser einen bestimmten Aufbau hat.

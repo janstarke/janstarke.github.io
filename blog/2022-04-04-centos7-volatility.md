@@ -3,7 +3,7 @@ layout: post
 title:  "Analyzing Linux memory images with volatility"
 date:   2022-04-04
 categories: forensics tools
-author: jasa
+authors: [jasa]
 ---
 
 # Installation of volatility3

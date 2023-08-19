@@ -3,7 +3,7 @@ layout: post
 title:  "Forensic analysis of deleted `$MFT` entries"
 date:   2021-10-22
 categories: forensics
-author: jasa
+authors: [jasa]
 ---
 
 In the book *FILE SYSTEM FORENSIC ANALYSIS*, the author *Brian Carrier* states that *"Every MFT entry also has a 16-bit sequence numberthat is incremented when the entry is allocated. For example, consider MFT entry 313 with a sequence number of 1. The file that allocated entry 313 is deleted, and the entry is allocated to a new file. When the entry is reallocated, it has a new sequence number of 2."* (page 276).

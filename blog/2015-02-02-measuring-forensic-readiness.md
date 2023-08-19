@@ -4,6 +4,7 @@ date: "2015-02-02"
 categories: 
   - "forensics"
 layout: post
+authors: [jasa]
 ---
 
 Most of our customers need help in optimizing their infrastructure security. What does that mean? You want to

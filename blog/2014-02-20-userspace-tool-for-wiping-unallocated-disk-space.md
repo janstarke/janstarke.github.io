@@ -4,6 +4,7 @@ date: "2014-02-20"
 categories: 
   - "forensics"
 layout: post
+authors: [jasa]
 ---
 
 This is just a simple idea and could as easily be rewritten in, e.g., Powershell, Perl, Python or whatever you want.

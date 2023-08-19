@@ -3,7 +3,7 @@ layout: post
 title:  "Using Pairing-based cryptography in Java"
 date:   2021-02-5
 categories: java crypto
-author: jasa
+authors: [jasa]
 ---
 
 Since some years I'm working on this topic, and guess what: It is working now :-)

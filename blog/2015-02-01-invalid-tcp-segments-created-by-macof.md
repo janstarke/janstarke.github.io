@@ -5,6 +5,7 @@ categories:
   - "allgemein"
   - "pentest"
 layout: post
+authors: [jasa]
 ---
 
 Some days ago, we used the tool _macof_, which is part of the [dsniff](http://www.monkey.org/~dugsong/dsniff/ "dsniff") package, in one penetration test. We observed that our attack had no effect to the hosts in the network, so we started sniffing around. Wireshark was our friend.

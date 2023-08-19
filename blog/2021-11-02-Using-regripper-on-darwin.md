@@ -3,7 +3,7 @@ layout: post
 title:  "Using regripper on MacOS"
 date:   2021-11-02
 categories: forensics tools
-author: jasa
+authors: [jasa]
 ---
 
 # Installation of regripper on MacOS

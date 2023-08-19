@@ -3,7 +3,7 @@ layout: post
 title:  "Pairing based cryptography in Rust"
 date:   2021-02-13
 categories: rust crypto
-author: jasa
+authors: [jasa]
 ---
 
 Because I was was fed up with catching memory issues in the legacy PBC code, I decided to reimplement the PBC library using Rust. You can watch my progress at [https://github.com/teeshop/pbc4rust](https://github.com/teeshop/pbc4rust).

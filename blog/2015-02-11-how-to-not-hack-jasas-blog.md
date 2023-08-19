@@ -5,6 +5,7 @@ categories:
   - "allgemein"
   - "pentest"
 layout: post
+authors: [jasa]
 ---
 
 Today, a strange guy tried to hack this blog. He didn't succeed. What a shame. So, in this post, I will try to give you some hints about what to do and what not to do if you're trying to hack into this blog:

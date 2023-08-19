@@ -4,6 +4,7 @@ date: "2021-01-01"
 categories: 
   - "allgemein"
 layout: post
+authors: [jasa]
 ---
 
 Historically, there were two options to import Windows Event Logs into Elasticsearch:

@@ -3,7 +3,7 @@ layout: post
 title:  "DoSing TLS endpoints"
 date:   2021-03-25
 categories: pentest perl
-author: jasa
+authors: [jasa]
 ---
 
 During these day, I had an interesting task: to test if som specific endpoint is vulnerable against a client-side TLS renegotiation DoS vulnerability.
