@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Jan Starke',
   tagline: 'This is a page about technological topics',
-  favicon: 'img/favicon.ico',
+  favicon: '/img/fox/fuchs_blau.ico',
 
   // Set the production url of your site here
   url: 'https://janstarke.github.io',
