@@ -6,7 +6,7 @@
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://janstarke.github.io/blog"/>
     <subtitle>Jan Starke Blog</subtitle>
-    <icon>https://janstarke.github.io/img/favicon.ico</icon>
+    <icon>https://janstarke.github.io/img/fox/fuchs_blau.ico</icon>
     <entry>
         <title type="html"><![CDATA[Analyzing Linux memory images with volatility]]></title>
         <id>https://janstarke.github.io/blog/2022/04/04/centos7-volatility</id>
