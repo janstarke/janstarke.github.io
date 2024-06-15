@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkjanstarke_blog=self.webpackChunkjanstarke_blog||[]).push([[7431],{7941:e=>{e.exports=JSON.parse('{"title":"Forensic stuff","slug":"/category/forensics","permalink":"/category/forensics","navigation":{"previous":{"title":"Cool tools","permalink":"/"},"next":{"title":"Forensic snippets for me and you","permalink":"/forensics/snippets"}}}')}}]);
