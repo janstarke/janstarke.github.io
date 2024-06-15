@@ -9,7 +9,7 @@
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <item>
-            <title><![CDATA[Rust: Iterators are not faster, but you should use them]]></title>
+            <title><![CDATA[Rust: Iterators are not faster; Anyway, you should use them]]></title>
             <link>https://janstarke.github.io/blog/2024/06/15/rust-using-iterators</link>
             <guid>https://janstarke.github.io/blog/2024/06/15/rust-using-iterators</guid>
             <pubDate>Sat, 15 Jun 2024 00:00:00 GMT</pubDate>

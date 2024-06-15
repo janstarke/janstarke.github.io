@@ -8,7 +8,7 @@
     <subtitle>Jan Starke Blog</subtitle>
     <icon>https://janstarke.github.io/img/fox/fuchs_blau.ico</icon>
     <entry>
-        <title type="html"><![CDATA[Rust: Iterators are not faster, but you should use them]]></title>
+        <title type="html"><![CDATA[Rust: Iterators are not faster; Anyway, you should use them]]></title>
         <id>https://janstarke.github.io/blog/2024/06/15/rust-using-iterators</id>
         <link href="https://janstarke.github.io/blog/2024/06/15/rust-using-iterators"/>
         <updated>2024-06-15T00:00:00.000Z</updated>
