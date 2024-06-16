@@ -218,6 +218,21 @@ We can conclude:
  - using the parallel iterator in our test case is significantly faster
  - migrating the code from traditional iterators to parallel iterators is simple
 
+## Iterators as design pattern
+
+Using iterators is an implementation of the [Pipes-and-Filters](https://en.wikipedia.org/wiki/Pipeline_(software)) design pattern:
+
+[![](/img/2024-06-15-rust-using-iterators/iterator-pipes-filter.drawio.svg)](/img/2024-06-15-rust-using-iterators/iterator-pipes-filter.drawio.svg)
+
+This approach has a lot of practical benefits:
+
+ - it is easy to
+   - insert a *processor* into the pipeline
+   - remove one *processor* from the pipeline
+   - change the order of *processors* in the pipeline
+ - every single *processor* is independant of the other, which allows to distribute them over multiple cores or even machines
+ - it can be easier to read (if you're familiar with the concept)
+ 
 ## Conclusion
 
 It doesn't matter if you use traditional loops or iterators. There will be no significant performance impact. But, if you want to be able to do significant changes, such as distributing loop iterations over multiple CPUs, without breaking your code, use iterators.
