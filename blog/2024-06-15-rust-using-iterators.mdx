@@ -6,7 +6,7 @@ categories: rust
 authors: [jasa]
 ---
 
-Since some time, I'm wondering wether using iterators in Rust has some
+Since some time, I'm wondering whether using iterators in Rust has some
 benefits over traditional `for` loops.
 
 ## The idea
@@ -172,7 +172,7 @@ test tests::test_sum2 ... bench:  25,639,836.30 ns/iter (+/- 1,405,975.61)
 
 OMG, what has happened???!!? Both approaches are equally performant. There seems to be no important difference between using a loop or iterator.
 
-**That's our first result: It doesn't matter wether you use traditional loops or iterators. You can expect both to be similar fast.**
+**That's our first result: It doesn't matter whether you use traditional loops or iterators. You can expect both to be similar fast.**
 
 ## Iterators on steroids
 
@@ -202,7 +202,7 @@ fn test_sum3(b: &mut Bencher) {
 }
 ```
 
-As you can see, there is another difference: to create a `ParallelIterator`, we use the function `par_iter()` instead of `iter()`. So, you have the full control wether you want to use parallel iterators or not.
+As you can see, there is another difference: to create a `ParallelIterator`, we use the function `par_iter()` instead of `iter()`. So, you have the full control whether you want to use parallel iterators or not.
 
 ### Benchmarking parallel iterators
 
