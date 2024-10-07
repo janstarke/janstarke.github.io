@@ -3,7 +3,7 @@ layout: page
 title: Forensische Analyse von Active Directory Datenbanken
 ---
 
-# Digitale Forensik: Analyse von Active Directory Datenbanken
+# Forensische Analyse von Active Directory Datenbanken mit `ntdsextract2`
 
 ## Übersicht
 
