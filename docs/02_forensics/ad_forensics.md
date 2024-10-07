@@ -22,7 +22,7 @@ Die Benutzerkonten, Passwörter, Berechtigungen etc. werden in den meisten Unter
 
 Außerdem hinterlassen viele Angriffe auch unbeabsichtigt Spuren im Active Directory, die bei der Analyse genutzt werden können, bspw. neu angelegte Computerkonten. 
 
-Ziel des Artikels ist, Grundzüge der forensischen Analyse von AD-Datenbanken zu vermitteln. Es wird zunächst beschrieben, wie die AD-Datenbank aufgebaut ist, und was bei der forensischen Sicherung zu beachten ist. Abschließend wird gezeigt, wie man eine forensische Analyse einer AD-Datenbank mit [`ntdsextract2`](https://github.com/janstarke/ntdsextract2) durchführen kann. Um das möglichst einfach anschaulich zu gestalten, wurde eine einfache AD-Datenbank verwendet. In dieser Datenbank sind keine konkreten Angriffsspuren zu finden; der Artikel beschäftigt sich ausschließlich mit der Vorgehensweise bei der forensischen Arbeit; jedoch nicht mit konkreten Angriffsmethoden.
+Ziel des Artikels ist, Grundzüge der forensischen Analyse von AD-Datenbanken zu vermitteln. Es wird zunächst beschrieben, wie die AD-Datenbank aufgebaut ist, und was bei der forensischen Sicherung zu beachten ist. Abschließend wird gezeigt, wie man eine forensische Analyse einer AD-Datenbank mit `ntdsextract2` [[1]](#a1) durchführen kann. Um das möglichst einfach anschaulich zu gestalten, wurde eine einfache AD-Datenbank verwendet. In dieser Datenbank sind keine konkreten Angriffsspuren zu finden; der Artikel beschäftigt sich ausschließlich mit der Vorgehensweise bei der forensischen Arbeit; jedoch nicht mit konkreten Angriffsmethoden.
 
 ## Spurensicherung
 
@@ -41,8 +41,33 @@ Sollte sich herausstellen, dass die `ntds.dit` nicht sauber ist, oder dass Infor
 
 :::info
 
-Für diesen Artikel habe eine öffentliche AD Datenbank von Didier Stevens genutzt, die speziell für Lernzwecke zur Verfügung gestellt wurde.
-
-Quelle: <https://blog.didierstevens.com/2016/07/12/practice-ntds-dit-file-part-1/>
+Für diesen Artikel habe eine öffentliche AD Datenbank von Didier Stevens [[2]](#a2) genutzt, die speziell für Lernzwecke zur Verfügung gestellt wurde.
 
 :::
+
+## Daten in der `ntds.dit`
+
+Die Datei `ntds.dit` enthält &mdash; technisch gesehen &mdash; zunächst einmal eine EseDB-Datenbank (Extensible Storage Engine) mit mehreren Tabellen. Die Daten des Active Directory liegen in der Tabelle datatable; viele Verknüpfungen zwischen Objekten, bspw. Gruppenmitgliedschaften, sind in der Tabelle `link_table` gespeichert.
+
+Jedes AD-Objekt entspricht einer Zeile (engl. `row`) der Tabelle `datatable`. Diese Tabelle hat eine Vielzahl von Spalten, je nachdem, wie genau das Schema des AD aussieht. Für jedes Attribut eines AD-Objekts existiert eine Spalte. Der Datentyp der Spalte sowie die Interpretation des Wertes obliegt dem Programm, das den Wert ausliest. Angenommen, wir wollen herausfinden, ob ein Account abgelaufen ist. Dann müssen wir folgende Schritte durchführen
+
+Wir ermitteln die Spalte mit dem Namen `ATTq589983` und lesen den Wert aus
+
+Der Wert in der Spalte ist (im Beispiel) `9223372036854775807`, mit dem Datentyp `Currency` (Währung). Natürlich handelt es sich nicht um Geld, sondern einfach um eine 64 Bit große Zahl, die die Anzahl der 100 Nanosekunden seit 01.01.1601 angibt (<https://learn.microsoft.com/de-de/windows/win32/api/minwinbase/ns-minwinbase-filetime>), und zwar in UTC. Diese Zahl entspricht dem Zeitstempel `9999-12-31T23:59:59+0000`.
+
+Theoretisch. Tatsächlich ist diese Zahl auch gleichzeitig die größte Zahl, die als 64 Bit mit Vorzeichen darstellbar ist. Microsoft hat diesen Wert vorgesehen, um zu speichern, dass ein Account nie abläuft (https://learn.microsoft.com/de-de/windows/win32/adschema/a-accountexpires)
+
+Die Antwort ist also: Der Account ist nicht abgelaufen.
+
+## Abkürzungen
+| | |
+|-|-|
+|AD|Active Directory|
+|UTC|Universal Time Coordinated|
+
+## Quellen
+
+| | |
+|-|-|
+|<a name="a1">[1]</a>|<https://github.com/janstarke/ntdsextract2>|
+|<a name="a2">[2]</a>|<https://blog.didierstevens.com/2016/07/12/practice-ntds-dit-file-part-1>|
