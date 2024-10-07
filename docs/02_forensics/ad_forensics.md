@@ -62,8 +62,8 @@ Die Antwort ist also: Der Account ist nicht abgelaufen.
 ## Abkürzungen
 | | |
 |-|-|
-|<a id="AD">AD</AD>|Active Directory|
-|<a id="UTC">UTC</UTC>|Universal Time Coordinated|
+|<a id="AD">AD</a>|Active Directory|
+|<a id="UTC">UTC</a>|Universal Time Coordinated|
 
 ## Quellen
 
