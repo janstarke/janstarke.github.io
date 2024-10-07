@@ -62,14 +62,14 @@ Die Antwort ist also: Der Account ist nicht abgelaufen.
 ## Abkürzungen
 | | |
 |-|-|
-|<a name="AD">AD</AD>|Active Directory|
-|<a name="UTC">UTC</UTC>|Universal Time Coordinated|
+|<a id="AD">AD</AD>|Active Directory|
+|<a id="UTC">UTC</UTC>|Universal Time Coordinated|
 
 ## Quellen
 
 | | |
 |-|-|
-|<a name="a1">[1]</a>|[https://github.com/janstarke/ntdsextract2](https://github.com/janstarke/ntdsextract2)|
-|<a name="a2">[2]</a>|[https://blog.didierstevens.com/2016/07/12/practice-ntds-dit-file-part-1](https://blog.didierstevens.com/2016/07/12/practice-ntds-dit-file-part-1)|
-|<a name="a3">[3]</a>|[https://learn.microsoft.com/de-de/windows/win32/api/minwinbase/ns-minwinbase-filetime](https://learn.microsoft.com/de-de/windows/win32/api/minwinbase/ns-minwinbase-filetime)|
-|<a name="a4">[4]</a>|[https://learn.microsoft.com/de-de/windows/win32/adschema/a-accountexpires](https://learn.microsoft.com/de-de/windows/win32/adschema/a-accountexpires)|
+|<a id="a1">[1]</a>|[https://github.com/janstarke/ntdsextract2](https://github.com/janstarke/ntdsextract2)|
+|<a id="a2">[2]</a>|[https://blog.didierstevens.com/2016/07/12/practice-ntds-dit-file-part-1](https://blog.didierstevens.com/2016/07/12/practice-ntds-dit-file-part-1)|
+|<a id="a3">[3]</a>|[https://learn.microsoft.com/de-de/windows/win32/api/minwinbase/ns-minwinbase-filetime](https://learn.microsoft.com/de-de/windows/win32/api/minwinbase/ns-minwinbase-filetime)|
+|<a id="a4">[4]</a>|[https://learn.microsoft.com/de-de/windows/win32/adschema/a-accountexpires](https://learn.microsoft.com/de-de/windows/win32/adschema/a-accountexpires)|
