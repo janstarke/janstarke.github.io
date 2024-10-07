@@ -53,9 +53,9 @@ Jedes AD-Objekt entspricht einer Zeile (engl. `row`) der Tabelle `datatable`. Di
 
 Wir ermitteln die Spalte mit dem Namen `ATTq589983` und lesen den Wert aus
 
-Der Wert in der Spalte ist (im Beispiel) `9223372036854775807`, mit dem Datentyp `Currency` (Währung). Natürlich handelt es sich nicht um Geld, sondern einfach um eine 64 Bit große Zahl, die die Anzahl der 100 Nanosekunden seit 01.01.1601 angibt (<https://learn.microsoft.com/de-de/windows/win32/api/minwinbase/ns-minwinbase-filetime>), und zwar in UTC. Diese Zahl entspricht dem Zeitstempel `9999-12-31T23:59:59+0000`.
+Der Wert in der Spalte ist (im Beispiel) `9223372036854775807`, mit dem Datentyp `Currency` (Währung). Natürlich handelt es sich nicht um Geld, sondern einfach um eine 64 Bit große Zahl, die die Anzahl der 100 Nanosekunden seit 01.01.1601 angibt [[3]](#a3), und zwar in UTC. Diese Zahl entspricht dem Zeitstempel `9999-12-31T23:59:59+0000`.
 
-Theoretisch. Tatsächlich ist diese Zahl auch gleichzeitig die größte Zahl, die als 64 Bit mit Vorzeichen darstellbar ist. Microsoft hat diesen Wert vorgesehen, um zu speichern, dass ein Account nie abläuft (https://learn.microsoft.com/de-de/windows/win32/adschema/a-accountexpires)
+Theoretisch. Tatsächlich ist diese Zahl auch gleichzeitig die größte Zahl, die als 64 Bit mit Vorzeichen darstellbar ist. Microsoft hat diesen Wert vorgesehen, um zu speichern, dass ein Account nie abläuft [[4]](#a4).
 
 Die Antwort ist also: Der Account ist nicht abgelaufen.
 
@@ -71,3 +71,5 @@ Die Antwort ist also: Der Account ist nicht abgelaufen.
 |-|-|
 |<a name="a1">[1]</a>|<https://github.com/janstarke/ntdsextract2>|
 |<a name="a2">[2]</a>|<https://blog.didierstevens.com/2016/07/12/practice-ntds-dit-file-part-1>|
+|<a name="a3">[3]</a>|<https://learn.microsoft.com/de-de/windows/win32/api/minwinbase/ns-minwinbase-filetime>|
+|<a name="a4">[4]</a>|<https://learn.microsoft.com/de-de/windows/win32/adschema/a-accountexpires>|
