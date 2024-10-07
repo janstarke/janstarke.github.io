@@ -69,7 +69,7 @@ Die Antwort ist also: Der Account ist nicht abgelaufen.
 
 | | |
 |-|-|
-|<a name="a1">[1]</a>|<https://github.com/janstarke/ntdsextract2>|
-|<a name="a2">[2]</a>|<https://blog.didierstevens.com/2016/07/12/practice-ntds-dit-file-part-1>|
-|<a name="a3">[3]</a>|<https://learn.microsoft.com/de-de/windows/win32/api/minwinbase/ns-minwinbase-filetime>|
-|<a name="a4">[4]</a>|<https://learn.microsoft.com/de-de/windows/win32/adschema/a-accountexpires>|
+|<a name="a1">[1]</a>|[https://github.com/janstarke/ntdsextract2](https://github.com/janstarke/ntdsextract2)|
+|<a name="a2">[2]</a>|[https://blog.didierstevens.com/2016/07/12/practice-ntds-dit-file-part-1](https://blog.didierstevens.com/2016/07/12/practice-ntds-dit-file-part-1)|
+|<a name="a3">[3]</a>|[https://learn.microsoft.com/de-de/windows/win32/api/minwinbase/ns-minwinbase-filetime](https://learn.microsoft.com/de-de/windows/win32/api/minwinbase/ns-minwinbase-filetime)|
+|<a name="a4">[4]</a>|[https://learn.microsoft.com/de-de/windows/win32/adschema/a-accountexpires](https://learn.microsoft.com/de-de/windows/win32/adschema/a-accountexpires)|
