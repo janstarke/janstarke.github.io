@@ -37,3 +37,12 @@ Wir haben von einem Domain Controller des angegriffenen Netzwerks die Datei `%wi
 `temp.ed`|"Notizblock" für die Arbeit mit der `ntds.dit`|:x:|
 `schema.ini`|Schemabeschreibung für die initiale Einrichtung des AD Schema|:x:|
 
+Sollte sich herausstellen, dass die `ntds.dit` nicht sauber ist, oder dass Informationen fehlen, dann müssen die Informationen in den Transaction-Logs zurückgespielt werden. Dafür wird das Programm `esentutl` genutzt; aber das ist nicht Thema dieses Artikels.
+
+:::info
+
+Für diesen Artikel habe eine öffentliche AD Datenbank von Didier Stevens genutzt, die speziell für Lernzwecke zur Verfügung gestellt wurde.
+
+Quelle: <https://blog.didierstevens.com/2016/07/12/practice-ntds-dit-file-part-1/>
+
+:::
