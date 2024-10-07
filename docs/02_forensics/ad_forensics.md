@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Forensische Analyse von Active Directory Datenbanken
+format: md
 ---
 
 # Digitale Forensik: Analyse von Active Directory Datenbanken
