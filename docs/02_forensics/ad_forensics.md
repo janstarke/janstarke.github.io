@@ -5,6 +5,8 @@ title: Forensische Analyse von Active Directory Datenbanken
 
 # Digitale Forensik: Analyse von Active Directory Datenbanken
 
+## Übersicht
+
 Viele komplexe Angriffe gegen Unternehmensnetzwerke finden in mehreren Phasen statt:
 
 1. Informationsgewinnung
@@ -45,7 +47,7 @@ Für diesen Artikel habe ich eine öffentliche [AD](#AD) Datenbank von Didier St
 
 :::
 
-## Daten in der `ntds.dit`
+### Daten in der `ntds.dit`
 
 Die Datei `ntds.dit` enthält &mdash; technisch gesehen &mdash; zunächst einmal eine EseDB-Datenbank (Extensible Storage Engine) mit mehreren Tabellen. Die Daten des Active Directory liegen in der Tabelle datatable; viele Verknüpfungen zwischen Objekten, bspw. Gruppenmitgliedschaften, sind in der Tabelle `link_table` gespeichert.
 
@@ -59,7 +61,7 @@ Theoretisch. Tatsächlich ist diese Zahl auch gleichzeitig die größte Zahl, di
 
 Die Antwort ist also: Der Account ist nicht abgelaufen.
 
-## *Record ID* und *Row ID*
+### *Record ID* und *Row ID*
 
 Die Einträge in der `datatable` können normalerweise mit dem Attribute `DsRecordId` eindeutig identifiziert werden. Dieses Attribut wird nachfolgend mit *Record ID* bezeichnet und ist eine Eigenschaft eines [AD](#AD)-Objekts.
 
