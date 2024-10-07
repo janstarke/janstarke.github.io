@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Forensische Analyse von Active Directory Datenbanken
-format: md
 ---
 
 # Digitale Forensik: Analyse von Active Directory Datenbanken
@@ -31,9 +30,9 @@ Wir haben von einem Domain Controller des angegriffenen Netzwerks die Datei `%wi
 
 |Datei|Beschreibung|Wichtig für Forensik?|
 |-|-|-|
-`ntds.dit`|AD Datenbank|<span style="color:green">:heavy_check_mark:</span>|
-`edb.log`|Transaction-Log für ntds.dit|<span style="color:green">:heavy_check_mark:</span>|
-`edbxxxxx.log`|Zusätzliche Transaction-Log-Dateien. Diese werden geschrieben, wenn `edb.log` voll ist, bevor die Logs in die `ntds.dit` zurückgeschrieben werden|<span style="color:green">:heavy_check_mark:</span>|
+`ntds.dit`|AD Datenbank|:heavy_check_mark:|
+`edb.log`|Transaction-Log für ntds.dit|:heavy_check_mark:|
+`edbxxxxx.log`|Zusätzliche Transaction-Log-Dateien. Diese werden geschrieben, wenn `edb.log` voll ist, bevor die Logs in die `ntds.dit` zurückgeschrieben werden|:heavy_check_mark:|
 `res1.log` und `res2.log`|Reserve-Logdateien. Diese enthalten keine Daten (theoretisch), sondern blockieren nur Speicherplatz. Wenn der Plattenplatz knapp wird, dann wird Speicherplatz dieser beiden Dateien genutzt, um die `edbxxxxx.log` schreiben zu können.|:x:|
 `temp.ed`|"Notizblock" für die Arbeit mit der `ntds.dit`|:x:|
 `schema.ini`|Schemabeschreibung für die initiale Einrichtung des AD Schema|:x:|
