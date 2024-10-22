@@ -89,7 +89,7 @@ Obwohl EseDB einen eigenen Datentyp für Zeitstempel hat, nutzt [AD](#AD) den Da
 Zunächst verschaffen wir uns einen Überblick über die Aktivitäten in der Datenbank innerhalb eines bestimmten Zeitraums. Wir nutzen dafür die Programme [`ntdsextract2`](#a1) und [`mactime2`](#mactime), und zur schöneren Darstellung [`xsv`](#xsv). Das Kommando
 
 ```shell
-ntdsextract2 ntds.dit timeline | mactime2 -d | xsv table
+ntdsextract2 ntds.dit timeline -F bodyfile | mactime2 -d | xsv table
 ```
 
 erzeugt folgende Ausgabe:
